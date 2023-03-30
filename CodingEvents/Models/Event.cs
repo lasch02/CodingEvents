@@ -8,6 +8,7 @@ namespace CodingEvents.Models
 		public string? ContactEmail { get; set; }
 		public string? Location { get; set; }
 		public int? NumAttendees { get; set; } 
+		public EventType Type { get; set; }
 	
 
 		public int Id { get; set; }
