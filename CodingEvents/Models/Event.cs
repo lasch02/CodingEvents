@@ -12,12 +12,9 @@ namespace CodingEvents.Models
 	
 
 		public int Id { get; set; }
-		static private int nextId = 1;
 
 		public Event()
 		{
-			Id = nextId;
-			nextId++;
 		}
 
 		public Event(string name, string description, string contactEmail, string location, int numAttendees) 
@@ -27,8 +24,6 @@ namespace CodingEvents.Models
 			ContactEmail = contactEmail;
 			Location = location;
 			NumAttendees = numAttendees;
-			Id = nextId;
-			nextId++;
 		}
 
         public override string? ToString()
