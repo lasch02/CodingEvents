@@ -3,6 +3,9 @@
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
+var connectionstring = "server=localhost;user=codingevents;password=codingevents;database=coding-events";
+var serverVersion = new MySqlServerVersion(new Version(8, 0, 32));
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
