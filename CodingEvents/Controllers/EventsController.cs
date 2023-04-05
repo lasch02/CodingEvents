@@ -79,6 +79,7 @@ namespace CodingEvents.Controllers
             context.SaveChanges();
 
             return Redirect("/Events");
+
         }
     }
 }
