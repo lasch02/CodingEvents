@@ -10,7 +10,7 @@
         {
         }
 
-        public EventCategory(string name)
+        public EventCategory(string name) : this() 
         {
             Name = name;
         }
