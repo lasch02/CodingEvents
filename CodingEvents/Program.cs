@@ -7,6 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
+<<<<<<< Updated upstream
 builder.Services.AddDefaultIdentity<IdentityUser>
 (options =>
 {
@@ -26,6 +27,10 @@ builder.Services.AddDefaultIdentity<IdentityUser>
 
 var connectionString = "server=localhost;user=testingMVC;password=testingMVC;database=testingMVC";
 var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
+=======
+var connectionString = "server=localhost;user=codingevents;password=codingevents;database=coding-events";
+var serverVersion = new MySqlServerVersion(new Version(8,0,32));
+>>>>>>> Stashed changes
 
 builder.Services.AddDbContext<EventDbContext>(dbContextOptions => dbContextOptions.UseMySql(connectionString, serverVersion));
 //--- end of connection syntax
